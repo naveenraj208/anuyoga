@@ -1,19 +1,49 @@
+// components/Footer.tsx
+
 export default function Footer() {
     return (
-      <footer className="bg-purple-100 py-10">
-        <div className="max-w-7xl mx-auto px-4 text-center text-sm text-gray-600">
-          <p>&copy; {new Date().getFullYear()} Anu Yoga Academy. All rights reserved.</p>
-          <div className="mt-4">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.536374890512!2d77.74899997513592!3d13.065156387258925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0f88b2f9e921%3A0xd98175f2608da870!2sKonig%20Orange%20County!5e0!3m2!1sen!2sin!4v1751293619727!5m2!1sen!2sin"
-              width="100%"
-              height="250"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+      <footer className="bg-purple-100 text-gray-800 pt-10 pb-6 mt-20 border-t border-purple-200">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Column 1: Logo & Description */}
+          <div>
+            <h3 className="text-2xl font-bold text-purple-700 mb-2">Anu Yoga Academy</h3>
+            <p className="text-sm">
+              Breathe in peace. Breathe out stress. Your journey toward inner calm and physical
+              well-being starts here.
+            </p>
           </div>
+  
+          {/* Column 2: Quick Links */}
+          <div>
+            <h4 className="text-lg font-semibold text-purple-700 mb-3">Quick Links</h4>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#about" className="hover:text-purple-600">About Us</a></li>
+              <li><a href="#services" className="hover:text-purple-600">Services</a></li>
+              <li><a href="#contact" className="hover:text-purple-600">Contact</a></li>
+              <li><a href="#testimonials" className="hover:text-purple-600">Testimonials</a></li>
+            </ul>
+          </div>
+  
+          {/* Column 3: Contact Info */}
+          <div>
+            <h4 className="text-lg font-semibold text-purple-700 mb-3">Contact</h4>
+            <p className="text-sm">Phone: +91 8884960197</p>
+            <p className="text-sm">Email: info@anuyogaacademy.com</p>
+            <p className="text-sm">Location: Bangalore, India</p>
+          </div>
+        </div>
+  
+        {/* Bottom Bar */}
+        <div className="mt-10 text-center text-sm text-gray-600 border-t border-purple-200 pt-4">
+          © {new Date().getFullYear()} Anu Yoga Academy. All rights reserved. | Built by{' '}
+          <a
+            href="https://naveenraj.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-purple-700 font-medium hover:underline"
+          >
+            naveenraj.tech
+          </a>
         </div>
       </footer>
     );

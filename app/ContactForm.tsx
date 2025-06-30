@@ -80,7 +80,7 @@ export default function ContactForm() {
 
         <div className="flex justify-center">
           <img
-            src="/images/yoga-pose.png"
+            src="/form.webp"
             alt="Yoga Pose"
             className="w-full max-w-sm rounded-xl shadow-lg"
           />
