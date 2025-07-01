@@ -5,6 +5,8 @@ import Services from './Services';
 import WhyChooseUs from './WhyChooseUs';
 import ContactForm from './ContactForm';
 import Testimonials from './Testimonials';
+import Founder from './founder';
+import Blogs from './Blogs';
 import Footer from './Footer';
 
 export default function Home() {
@@ -14,9 +16,11 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Founder />
       <WhyChooseUs />
       <ContactForm />
       <Testimonials />
+      <Blogs/>
       <Footer />
     </main>
   );

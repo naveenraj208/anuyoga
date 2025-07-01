@@ -2,15 +2,15 @@
 
 export const testimonials = [
     {
-      name: 'Ravi Kumar',
+      name: 'AAA',
       quote: 'Anu Yoga Academy changed my life with inner peace and physical strength!',
     },
     {
-      name: 'Meera Iyer',
+      name: 'BBB',
       quote: 'My flexibility and health have drastically improved. Highly recommend!',
     },
     {
-      name: 'Sahana R',
+      name: 'CCC',
       quote: 'The trainers are experienced and the environment is so peaceful. Loved it!',
     },
   ];
